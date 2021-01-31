@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "JavaScriptKit",
+        "repositoryURL": "https://github.com/yonihemi/JavaScriptKit",
+        "state": {
+          "branch": "asyncify-npm",
+          "revision": "8ae9ed7d12354b4d86767df967d20d536789d35f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

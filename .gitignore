@@ -1,0 +1,10 @@
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata/
+
+node_modules/
+
+# Keep /dist for Github Pages
+# /dist
