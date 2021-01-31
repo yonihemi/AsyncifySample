@@ -1,0 +1,42 @@
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>SwiftWasm Asyncify Sample</title>
+      <style>
+        .runtimeError {
+            background-color: rgba(193, 71, 27, 1);   
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .runtimeErrorMessage {
+            color: white;
+            font-family: ui-monospace, monospace;
+            font-size: 12px;
+            word-break: break-word;
+            width: 100%;
+        }
+      </style>
+      <script>
+         window.fetchAsText = (url) => {
+          return fetch(url)
+            .then(response => {
+              if (response.ok) {
+                return response.text();
+              } else {
+                throw `Bad HTTP Response ${response.status}`;
+              }
+            });
+        };
+      </script>
+      <script type="text/javascript" src="dev.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
